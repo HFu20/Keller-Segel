@@ -1,9 +1,0 @@
-function  [c,n] = Initial_solution_3D(xf,yf,zf)
-
-%blow up at mid, initial value for Example 4.6
-[XF, YF, ZF] = meshgrid(xf, yf, zf);
-
-n = 1000 * exp(-100 * ((XF - 0.5).^2 + (YF - 0.5).^2 + (ZF - 0.5).^2));
-c = 500 * exp(-50 * ((XF - 0.5).^2 + (YF - 0.5).^2 + (ZF - 0.5).^2));
-
-end
